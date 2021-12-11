@@ -34,14 +34,14 @@ async def test(ctx, *, par):
 
 @bot.command()
 async def help(ctx):
-    emBed = discord.Embed(title="Tutorial bot help", description =" All available bot command", color=0x42f5a7)
+    emBed = discord.Embed(title="ลุงพล bot help", description =" All available bot command", color=0x42f5a7)
     emBed.add_field(name="+help", value = "Get help command", inline=True)
-    emBed.add_field(name="+test", value = "Respond message that you've send", inline=True)
-    emBed.add_field(name="+bot", value = "Introduce bot", inline=True)
-    emBed.set_thumbnail(url='https://www.pngall.com/wp-content/uploads/2016/06/Adidas-Logo-PNG-Clipart.png')
-    emBed.set_image(url='https://upload.wikimedia.org/wikipedia/commons/0/00/Liverpool_vs._Chelsea%2C_UEFA_Super_Cup_2019-08-14_53.jpg')
+    emBed.add_field(name="+play", value = "Play a music with Youtube link", inline=True)
+    emBed.add_field(name="+poll", value = "Get a poll for voting", inline=True)
+    emBed.set_thumbnail(url='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSRkqVrVWhIcZ4ahKLDtziqL1zt84oZsho70MhzHMtNM8nZ8jq3fkauHbBoK6Co9ebH43A&usqp=CAU')
+    emBed.set_image(url='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTbksTx4PKiVXVsGpJlzwNQl2s2WrX0R-MHcg&usqp=CAU')
     emBed.set_author(name="Dome", icon_url="https://www.freeiconspng.com/thumbs/human-icon-png/human-icon-png-png-20.png")
-    emBed.set_footer(text ="footer", icon_url='https://www.pngall.com/wp-content/uploads/2016/06/Adidas-Logo-PNG-Clipart.png')
+    emBed.set_footer(text ="ลุงพล บอท")
 
     await ctx.channel.send(embed=emBed)
 
