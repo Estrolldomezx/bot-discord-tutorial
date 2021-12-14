@@ -89,6 +89,7 @@ class MusicPlayer:
     __slots__ = ('bot', '_guild', '_channel', '_cog', 'queue', 'next', 'current', 'np', 'volume')
 
     def __init__(self, ctx):
+        self.players = {}
         self.bot = ctx.bot
         self._guild = ctx.guild
         self._channel = ctx.channel
@@ -115,7 +116,7 @@ class MusicPlayer:
                 async with timeout(300):  # 5 minutes...
                     source = await self.queue.get()
             except asyncio.TimeoutError:
-                # del players[self._guild]
+                del players[self._guild]
                 return await self.destroy(self._guild)
 
             if not isinstance(source, YTDLSource):
