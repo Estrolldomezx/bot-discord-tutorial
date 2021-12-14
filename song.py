@@ -89,7 +89,7 @@ class MusicPlayer:
     __slots__ = ('bot', '_guild', '_channel', '_cog', 'queue', 'next', 'current', 'np', 'volume')
 
     def __init__(self, ctx):
-        self.players = {}
+
         self.bot = ctx.bot
         self._guild = ctx.guild
         self._channel = ctx.channel
