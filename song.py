@@ -115,7 +115,7 @@ class MusicPlayer:
                 async with timeout(300):  # 5 minutes...
                     source = await self.queue.get()
             except asyncio.TimeoutError:
-                del players[self._guild]
+                # del players[self._guild]
                 return await self.destroy(self._guild)
 
             if not isinstance(source, YTDLSource):

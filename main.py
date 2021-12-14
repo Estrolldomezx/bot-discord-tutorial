@@ -1,7 +1,7 @@
 import discord
 import asyncio
 import random
-import os #add
+import os
 
 #import module
 from discord.ext import commands
